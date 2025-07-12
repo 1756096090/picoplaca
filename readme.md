@@ -26,4 +26,11 @@ En target\picoplaca-0.0.1-SNAPSHOT.jar
 
 ```bash
 java -jar picoplaca-0.0.1-SNAPSHOT.jar
+```
+
+### Curriculum
+
+  
+-- El el archivo `IsaacCerdaCV (2).pdf`
+
 
