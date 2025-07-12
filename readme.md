@@ -18,7 +18,7 @@ https://s.icepanel.io/bDyZ5qTFo3IZPK/zOmC
 git clone <URL_DEL_REPOSITORIO>
 cd picoplaca
 ./mvnw clean package
-
+```
 ** Archivo copilado
 En target\picoplaca-0.0.1-SNAPSHOT.jar
 
