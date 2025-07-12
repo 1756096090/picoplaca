@@ -15,7 +15,7 @@ https://s.icepanel.io/bDyZ5qTFo3IZPK/zOmC
 ## Instalación
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/1756096090/picoplaca
 cd picoplaca
 ./mvnw clean package
 ```
