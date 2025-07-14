@@ -4,6 +4,6 @@ import com.isaa.cerda.picoplaca.model.PicoPlacaDto;
 
 public interface PicoPlacaService {
 
-    Boolean isRoadCirculationAllowed(PicoPlacaDto picoPlacaDto);
+    boolean isRoadCirculationAllowed(PicoPlacaDto picoPlacaDto);
 
 }

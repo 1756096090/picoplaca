@@ -5,10 +5,21 @@ import com.isaa.cerda.picoplaca.exception.InvalidPlateException;
 import com.isaa.cerda.picoplaca.exception.PastDateTimeException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.*;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
+
+     @ExceptionHandler(MissingServletRequestParameterException.class)
+    public ResponseEntity<ErrorResponse> handleMissingParams(MissingServletRequestParameterException ex) {
+        String name = ex.getParameterName();
+        String message = String.format("Faltan valores: parámetro '%s' es obligatorio", name);
+        ErrorResponse body = new ErrorResponse(message);
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(body);
+    }
 
     @ExceptionHandler(InvalidPlateException.class)
     public ResponseEntity<ErrorResponse> handleInvalidPlate(InvalidPlateException ex) {
@@ -26,7 +37,6 @@ public class GlobalExceptionHandler {
                 .body(body);
     }
 
-    // Si quisieras un catch-all:
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleAny(Exception ex) {
         ErrorResponse body = new ErrorResponse("Error interno");
