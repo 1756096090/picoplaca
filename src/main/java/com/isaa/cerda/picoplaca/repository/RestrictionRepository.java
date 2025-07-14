@@ -6,9 +6,7 @@ import com.isaa.cerda.picoplaca.model.TimeRestriction;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-/**
- * Abstracción única para manejar restricciones de Pico y Placa.
- */
+
 public interface RestrictionRepository {
 
 
