@@ -11,6 +11,8 @@ https://s.icepanel.io/bDyZ5qTFo3IZPK/zOmC
 
 - Java 21  
 - Maven 3.8+ (o usar el wrapper incluido: `mvnw`/`mvnw.cmd`)
+- Puerto 8080 libre
+
 
 ## Instalación
 
